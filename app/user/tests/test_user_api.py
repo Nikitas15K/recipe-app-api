@@ -103,7 +103,7 @@ class PublicUserApiTests(TestCase):
 
         res = self.client.get(ME_URL)
 
-        self.assertEqual(res.status_code, status.HTTP_401_UNATHORIZED)
+        self.assertEqual(res.status_code, status.HTTP_401_UNAUTHORIZED)
 
 class PrivateUserApiTests(TestCase):
     """Test API requests that require authentication."""
